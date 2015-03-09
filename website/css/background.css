@@ -1,0 +1,28 @@
+* {
+  background-color: #61FFA0;
+}
+
+body {
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #FF5050;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body h1 {
+  background-color: #FF5050;
+}
+
+body p {
+  !<--Make sure you format the text box to wrap-->
+  border-radius: 20px;
+  background-color: #FF5050;
+  padding: 20px;
+  margin: 1in;
+}
+#footer {
+  bottom: 0;
+  position: fixed;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+  <title>Your page title here</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="t2-css-design.css">
+</head>
+
+<main>
+  <body>
+    <div>
+  <h1>Week 2 Blog<span>March 8, 2015</span></h1>
+  <h2>Different Types of Positioning</h2>
+
+  <section>
+    <p>
+      Today I will be explaining to you the differences and uses for different types of positioning; absolute, fixed, and relative. These different types of positioning are very useful, but are also easily misused in code.
+    </p>
+    <p>
+      Let's start with absolute positioning. This type of positioning will keep the element in one particular spot on your webpage. You can set exactly how high, low, left, or right, you want your element. You have to be very careful where you nest this element, however. If there is no parent element, like "body" tags, or "paragraph" tags, then this element will look to the "html" tags for guidance and placement. This means that, if it is inside "body" tags, this particular object will be positioned within the scope of the "body". Also, absolute positioned elements inside of an element, like "body", will not have the same formatting as the rest of the "body". They need to be coded separately. The way that you would code an element to have absolute positioning in your CSS is like so; <span>element {position:absolute}</span>.
+    </p>
+    <p>
+      Next, we have fixed positioning. Fixed positioning will keep an element in a particular spot within the viewscreen. This can be useful, but it can also inhibit the usability of your webpage. If you have a bar that you want to make a header, it seems like the "safest" way to go. Probably the easiest to format, anyway. I've never done it, though, so I'm not sure. You can imagine how it could be an issue, though, with the wide range of screen sizes. This keeps an element in a particular location, so if you have it sized by pixels, it will hinder the website on smaller screens. It could be blocking important information, possibly feature buttons, photos, links, anything at all. When done correctly, however, I think it looks pretty cool. The most common I have seen is when they have a bar that contains a home button and/or a search button, that makes navigating your page easier. The way to code an element as a fixed position in CSS is as follows, <span>element{position:fixed}</span>.
+    </p>
+    <p>
+      Last, we will look at relative positioning. The term relative, in this case, does not mean relative to the page, it actually means relative to itself. So, it will change where the object appears in relation to where it *would* appear if there was no position command. For example, if you put a top margin of 3ems, it would appear 3 ems lower than where it *should* have been. This one is easily misused, but can come in very handy if you need to realign elements and can't get them to cooperate otherwise. The code for relative position in CSS is <span>element{position:relative}</span>.
+    <p>
+      Now that we understand the differences in positions...here are a couple penguin pictures. Good luck!!
+
+
+       <div id="pic1"><img src="http://channel.nationalgeographic.com/exposure/content/photo/photo/42821_penguin-family_ov6heons5l34jtainiivhu6ox7ncurxrbvj6lwuht2ya6mzmafma_610x406.jpg"></div>
+       <div id="pic2"><img src="http://searchengineland.com/figz/wp-content/seloads/2012/04/penguin.jpg"></div>
+       <div id="pic3"><img src="http://netstorage.discovery.com/feeds/brightcove/asset-stills/dsc/138496253307114245100401197_PenguinCamsTakeABeating.jpg"></div>
+       <div id="pic4"><img src="http://s.ngm.com/2012/11/emperor-penguins/img/penguins-launches-to-ice-text-615.jpg"></div>
+    </p>
+    <p>
+
+    </p>
+  </section>
+</div>
+</body>
+</main>
+
+

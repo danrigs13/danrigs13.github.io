@@ -1,0 +1,21 @@
+body {
+  color: #802828;
+  font-family: sans-serif;
+  background-color: #FFEBD6;
+  font-size: 2em;
+}
+div {
+  border-radius: 50px;
+  background-color: #FF5050;
+  padding: 20px;
+  margin: 1in;
+}
+h1 span {
+  font-size: .5em;
+  float:right;
+}
+
+#footer {
+  bottom: 0;
+  position: fixed;
+}

@@ -1,0 +1,26 @@
+* {
+  background-color: #61FFA0;
+}
+body {
+  border-radius: 50px;
+  background-color: #FF5050;
+  padding: 20px;
+  margin: 1in;
+}
+
+h1 {
+  background-color: #FF5050;
+}
+
+h2 {
+  background-color: #FF5050;
+}
+
+p {
+  background-color: #FF5050;
+}
+
+#footer {
+  bottom: 0;
+  position: fixed;
+}
