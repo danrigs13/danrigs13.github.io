@@ -19,3 +19,8 @@ h1 span {
   bottom: 0;
   position: fixed;
 }
+#image {
+  clear: both;
+  float: center;
+  text-align: center;
+}
