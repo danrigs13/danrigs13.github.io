@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+  <title>Enumberable Methods</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css">
+</head>
+
+<main>
+  <body>
+    <div>
+  <h1>Enumberable Methods<span>March 22, 2015</span></h1>
+  <h2>It's a Cy-Clone!</h2>
+
+  <section>
+    <p>
+      Today will be a rather short post about an enumerable method, #cycle. This a simple little command that can actually be very helpful, and potentially hazardous. Cycle is basically the same as using x.times puts on an array, but it is a lot cleaner. Where with #times you have to specify a number of times to do something, you don't have to specify that with cycle. Cycle will continue to run infinitely, though, so it is highly suggested that you use an argument for the number of times you want something to run.
+    </p>
+    <p>
+      If array = ["first thing", "second thing", "next thing", "last   thing"]</p>
+    <p>
+      And we put array.cycle(5) {|i| puts i}
+    </p>
+    <p>
+      We will get:
+    </p>
+    <p>
+      first
+      second
+      next
+      last
+      first
+      second
+      next
+      last
+      first
+      second
+      next
+      last
+      first
+      second
+      next
+      last
+      first
+      second
+      next
+      last
+    <p>
+        As you can see, the array was repeated 5 times, which is the number that we called in our code. This is a simple and clean way to print out X number of an array, and allows us to chain different commands onto it. We can reverse the cycle if we need to, we can also call #next if we would like to get the next value that would be printed. It helps allow for a lot of versatility and usability when working in enumerables.
+    </p>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</div>
+</body>
+</main>
+
+
