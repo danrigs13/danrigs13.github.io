@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+  <title>Classes</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css">
+</head>
+
+<main>
+  <body>
+    <div>
+  <h1>Classes or Pets?<span>March 29, 2015</span></h1>
+  <h2>Classes, classes everywhere, but not a dog to bark</h2>
+
+  <section>
+    <p>
+      Let's get a brief snapshot of classes, how to use them, and how they can be very helpful with things like instance variables. If we have a vet hospital that is always receiving new clients, there are basic things we need to know about each one. Creating a class within our code is an easy way to make our code more readable and accessible by other people. Classes can help us eliminate repetitive code, and instance variables can help us understand exactly what our code is doing. Here is an example of creating a class, Patient, with a method built into it that will print out the name, breed, and age of an animal that is a current patient.
+    </p>
+  <p>.class Patient </p>
+  <p>.....def initialize(breed, name, age)</p>
+  <p>.....# Instance variables </p>
+  <p>.........@breed = breed  </p>
+  <p>.........@name = name  </p>
+  <p>.........@age = age </p>
+  <p>.....end  </p>
+<p>.</p>
+  <p>.....def display <p>
+  <p>.........puts "I am #{@name}. I am a #{@breed} and am #{@age} years old." </p>
+  <p>.....end </p>
+  <p>.end </p>
+    </p>
+    <p>
+      As you can see, the current age will be displayed when we call the method #display in the Patient class. The @ will call an instance variable. These must be defined within the class, or the code will break. Here we have a very very simple version of something that could really be much more complex. These instance variables can come in very handy when doing mathematical conversions. For example, if we were having to add 5 years, divide the age by 6, multiply it by 3, subtract 8, and then find the square of an animal's age, we wouldn't have to write that in our code over and over. We could simply say @age = (((age.to_i)+5)/(6*3)-8)**. I think we can all agree that we would rather not do all of that typing EVERY time we want to use a recalculated age. It is important to note that the instance variables lose their definitions if you try to use them within another class.
+    </p>
+    <p>
+      That is just a little bit about Ruby classes and instance variables, there will be more to come! Stay tuned!!
+    </p>
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</div>
+</body>
+</main>
+
+
