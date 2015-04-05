@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+  <title>Variable Scope</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css">
+</head>
+
+<main>
+  <body>
+    <div>
+  <h1>Ruby Scope<span>April 5, 2015</span></h1>
+  <h2>Different Scopes Do Different Jobs</h2>
+
+  <section>
+    <p>
+      Today, we will be discussing variable scope, something very important and useful in Ruby. First off, let's take a short look at each different type of variable we can find in Ruby and what they do.
+    </p>
+    <p><h4>Global Variable:</h4> Easily recognized by having a $ in front of it, they are accessible anywhere within the program no matter where they are defined. They will appear like this, $globalvariable</p>
+    <p><h4>Class Variable:</h4> These variables are always prefixed with @@. They are accessible in every instance of a class. If this variable's value is changed in one part of the class, it will be changed in all other parts of the class as well.</p>
+    <p><h4>Instance Variable:</h4> These are prefixed with only one @. Like class variables, they are accessible through the entire class. However, unlike class variables, if their value is changed in one instance, possibly through a method, it will only change the value in this one particular instance. It will not affect the rest of the class.</p>
+    <p><h4>Local Variable:</h4> These variables have no special character to identify them, and they are only accessible within the part of your code that uses it. Most local variables we see will begin with a lowercase letter, but they can also start with an underscore. Local variables must be constantly defined if you are trying to use them in various methods. An easy example would be x. If you think about math, x can be set equal to whatever you need it to be, and this definition is different for each math problem.</p>
+    <p><h4>Constant:</h4> These variables must begin with a capital letter, and depending on where we define them, they have different scopes. If we define a constant outside of a class/module, then they will have a global scope by default. If we define them within a class/module, they can be accessed anywhere within it, much like a class variable. These variables generally should not be changed, though on rare occasions it will happen.</p>
+    <h3>When would these most likely be used?</h3>
+    <p>We can assume that with Global variables, we would want to use them when we have a set of data that is being used over multiple classes. If we are trying to perform multiple types of calculations on one set of imperical data, and we decide that different classes would be the best way to make our code work/readable, we could set the data as a global variable. It is similar with constants. It is best practice to only set something as a constant if it should NOT change, ever. Otherwise, it would probably be better to just make it a global variable. With class variables, we would prefer to use them when we have a set of calculations/code that is only necessary within the class, this is a good time to utilize the class variable. Instance variables help us make our code DRY. We can set a variable as an instance variable and give it a short but descriptive name, and that would be a good example of a proper use for an instance variable. Local variables are also very useful for things like .each do |row,column|, where we are trying to iterate over an array of arrays.</p>
+    <p><h4>Moral of the story...</h4></p>
+    <p>The best practice for ruby is to make your variables have the smallest possible scope. If you have variables that are accessible outside of where you absolutely need them, you have not followed the best ruby practice. If you are unsure of where your variables should be accessible, try changing the scope of your variable and testing your code. If your code still runs as expected/needed on a smaller scope, then you should probably leave it at this smaller level. If not, leave it the scope you have it.</p>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</div>
+</body>
+</main>
+
+
