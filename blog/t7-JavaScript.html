@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+  <title>Ruby Classes vs. JavaScript Constructor Functions</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css">
+</head>
+
+<main>
+  <body>
+    <div>
+  <h1>Classes vs. Constructor Functions<span>April 11, 2015</span></h1>
+  <h2>Similar but not quite the same...</h2>
+
+  <section>
+    <p>
+      Alrighty, we are going to look at the fundamental differences between Ruby's classes and JavaScript's constructor functions. I am going to keep this very simple and (hopefully) very short.
+    </p>
+    <p>
+      Ruby classes are pretty easily defined. You start off with: </p>
+      <p>class Greet</p>
+      <p>.....def var</p>
+       <p> ........@var</p>
+       <p> .....end</p>
+       <p>.....def var=(val)</p>
+       <p>........@var = val</p>
+       <p>.....end</p>
+       <p>end</p>
+       <p>different_greeting = Greet.new</p>
+    <p>
+      This will get you a new version of Greet that has the same basic values already programmed into it because you have called #new. If we were to try to do this in JavaScript, it would look something like this:</p>
+    <p>var greet = {};</p>
+    <p>greet.greeting = "Hello!"</p>
+    <p>Now, using this setup, we can add as many properties to our object as we would like to. This is very similar to a Ruby hash. They are both used to store key/value pairs. It is easier to access these pair in Ruby if we are trying to get at them with a loop than it is if we are trying to get into them with a loop in JavaScript, though. In Ruby, we have the .each function that is not present in JavaScript. We would have to actually go create a function in JavaScript and specifically tell it how to get into the object and pull out only what we are looking for. This could be pretty difficult, depending on what kind of calculations we are trying to do.
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</div>
+</body>
+</main>
